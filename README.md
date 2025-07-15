@@ -13,13 +13,13 @@ Ky projekt analizon të dhënat e prodhimit të energjisë elektrike në Evropë
 ## File-t kryesore
 
 - `main.py`: Kodi për analizë dhe vizualizim.
-- `data/konsumi_energji_europe.csv`: Të dhënat energjetike të Evropës.
+- `data/gjenerimi_energji_europe.csv`: Të dhënat energjetike të Evropës.
 - `requirements.txt`: Libraritë e nevojshme.
 
 
 ## Shënim
 
-Të dhënat janë të bazuara në trende të përafërta për qëllime edukative. Ato tregojnë **gjenerimin**, jo konsumimin final të energjisë.
+Të dhënat janë të bazuara në trende të përafërta për qëllime edukative. Ato tregojnë **gjenerimin**, e energjisë.
 
 ---
 
