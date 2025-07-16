@@ -1,6 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
+# Krijo folderin 'plots' nëse nuk ekziston
+os.makedirs('plots', exist_ok=True)
 
 # Leximi i të dhënave
 df = pd.read_csv("data/gjenerimi_energjise_europe.csv")
@@ -35,7 +38,8 @@ ax2.tick_params(axis='y', labelcolor='red')
 plt.title("Gjenerimi Total dhe Rritja Vjetore e Energjisë në Evropë")
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+plt.savefig('plots/grafiku1.png')
+plt.close()
 
 # === GRAFIKU 2: Bar chart me ngjyra sipas rritjes ===
 plt.figure(figsize=(10,5))
@@ -47,7 +51,8 @@ plt.ylabel("Rritja (%)")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+plt.savefig('plots/grafiku2.png')
+plt.close()
 
 # === GRAFIKU 3: Pie chart për biofuel (vetëm nëse ka të dhëna) ===
 if df["biofuel_share_energy"].notna().any():
@@ -59,7 +64,8 @@ if df["biofuel_share_energy"].notna().any():
     plt.pie(sizes, labels=labels, autopct='%1.1f%%', colors=["blue", "orange"])
     plt.title(f"Pjesëmarrja e Biofuel në Energji ({int(latest['year'])})")
     plt.tight_layout()
-    plt.show()
+    plt.savefig('plots/grafiku3.png')
+    plt.close()
 
 # === GRAFIKU 4: Bar chart për mesataren çdo 5 vite ===
 df["grupi_viteve"] = (df["year"] // 5) * 5
@@ -72,7 +78,8 @@ plt.xlabel("Periudha (5-vjeçare)")
 plt.ylabel("Rritja mesatare (%)")
 plt.grid(axis='y')
 plt.tight_layout()
-plt.show()
+plt.savefig('plots/grafiku4.png')
+plt.close()
 
 # === GRAFIKU 5: Histogram për shpërndarjen e rritjes ===
 plt.figure(figsize=(8,4))
@@ -82,4 +89,5 @@ plt.xlabel("Rritja (%)")
 plt.ylabel("Frekuenca")
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+plt.savefig('plots/grafiku5.png')
+plt.close()
