@@ -19,7 +19,7 @@ Ky projekt analizon të dhënat e prodhimit të energjisë elektrike në Evropë
 
 ## Shënim
 
-Të dhënat janë të bazuara në trende të përafërta për qëllime edukative. Ato tregojnë **gjenerimin**, e energjisë.
+Të dhënat janë të bazuara në trende të përafërta për qëllime edukative. Ato tregojnë **gjenerimin** e  energjisë.
 
 ---
 
@@ -50,4 +50,10 @@ Nga analiza e të dhënave të gjenerimit të energjisë elektrike në Evropë p
 
 ### ✅ Përfundim
 Të dhënat tregojnë se **Evropa ka pasur një zhvillim të qëndrueshëm në sektorin e energjisë**, me një orientim të qartë drejt **dekarbonizimit** përmes përdorimit të biokarburanteve. Këto trende përputhen me politikat klimatike të Bashkimit Evropian dhe objektivat për **neutralitet klimatik deri më 2050**.
+
+### 🧾Si të eksploroni projektin
+
+Analiza Python: Mund të ekzekutoni skriptet për të parë grafikët dhe llogaritjet e rritjes vjetore, shpërndarjes dhe pjesëmarrjes së biofuel.
+
+Dashboard Power BI: Vizualizoni të dhënat në mënyrë interaktive përmes panelit ku mund të aplikoni filtra sipas viteve, burimeve të energjisë, dhe indikatorëve të ndryshëm.
 
